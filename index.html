@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font-family: 'PT Sans', sans-serif; -->
+</head>
+
+<body>
+
+    <nav id="navbar">
+         <div id="logo"> 
+             <!-- Just for covering space  -->
+        </div> 
+
+        <ul>
+            <li class="item"> <a href="#home" >Home </a> </li>
+            <li class="item"> <a href="#fakenews">Introduction </a> </li>
+            <li class="item"> <a href="#detection">Detection </a> </li>
+            <li class="item"> <a href="#about_us">About us </a> </li>
+            <li class="item"> <a href="#contact_us">Contact us</a> </li>
+        </ul>
+
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary" data-text="welcome to our Fake News Detection website" >Welcome to Our <br> Fake  News Detection <br> Website</h1>
+
+    </section>
+
+    <section class="fakenews-container">
+        <br>
+        <div id="fakenews">
+            <br><br><br>
+            <h1 class="fake-page" >Fake News</h1>
+            <div class="mainbox">
+                <div class="box1 box" >
+                <h2 class="h-secondary center">What is a Fake News??</h2>
+                <div class="one">
+                <img src="Images/hacker.jpg" alt="">
+           
+                <p class="center">Fake news is any false or misleading information presented as news and communicated in
+                    formats spanning spoken and written.
+                    Fake news can reduce the impact of real news by competing with it and has the 
+                    potential to undermine trust in serious media coverage.
+                    <!-- Fake news brainwashes people overtime. -->
+                </p></div>
+            </div>
+        
+            <div class="box2 box">
+                <h2 class="h-secondary center">Impact of Fake News</h2>
+                <div class="one">
+                <img src="Images/hacker_guy.jpg" alt="">
+           
+                <p class="center">
+                <ul>
+                    <li>Financial impacts or impacts on our health</li>
+                    <li>Fear</li>
+                    <li>Racist ideas</li>
+                    <li>Bullying and violence against innocent people</li>
+                    <li>Democratic impacts </li>
+                </ul>
+
+                </p>
+            </div></div>
+            <div class="box1 box" >
+                <h2 class="h-secondary center">About this Website</h2>
+                <div class="one">
+                    <img src="Images/turn.jpg" alt="">
+                    <p class="center">Fake News Detection Website is utility tool where one can check whether the news provided by him/her through its url 
+                        or content is Fake or Real and also 
+                         one can get to see the statistics of fake news year wise, country wise and platform wise.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    
+
+    <section id="detection"> 
+        <div class="result" id="fake">
+            <h2>Is it Fake?</h2>
+            <div class="result_box">
+                <p id="fakepara" >Yes, it is Fake*</p>
+            </div>
+            <img src="Images/left.jpg" alt="">
+        </div>
+        <div id=detectbox>
+                <h1 class="detection_page">Detection</h1>
+                <form action="" method="POST">
+                <div class="detection-box ">
+                    <div class="textbox">
+                   
+                    <input type="url" placeholder="Enter url" name="NewsUrl" value="">
+                    
+                </div>
+                <button class="btn" name="Submit_B" type="submit" value="URLnews">Submit</button>
+                <h2>OR</h2>
+            </div>
+            <div class="detection-box">
+                <div class="textbox">
+                    
+                    <input type="text" placeholder="Enter Content" name="content" value="">
+                    
+                </div>
+                <button class="btn" name="Submit_B" type="submit" value="newsContent">Submit</button>
+            </div>
+        </form>
+        </div>
+        <div class="result" id="real">
+            <h2>Is it Real?</h2>
+            <div class="result_box">
+                <p id="realpara" >Yes, it is Real*</p>
+            </div>
+             <img src="Images/right.jpg" alt="">
+        </div>
+
+    </section>
+    
+        <section id="about_us">
+            <h1 class="About">About Us</h1>
+            <div class="about">
+                <!-- Aaditya Saraswat  -->
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Aaditya Saraswat</h2>
+                    <p>Leader</p>
+                </div>
+
+                <!-- Depanshu Bhadauria  -->
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Depanshu Bhadauria</h2>
+                    <p>
+                        ML Developer</p>
+                </div>
+
+                <!-- Pavan Kumar Sharma -->
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Pavan Kumar Sharma</h2>
+                    <p>ML Developer</p>
+                </div>
+
+                <!-- Amit Kumar  -->
+                
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Amit Kumar</h2>
+                    <p>FrontEnd Developer
+                    </p>
+                </div>
+
+                <!-- Bhavya  -->
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Bhavya</h2>
+                    <p>Frontend Developer</p>
+                </div>
+
+                <!-- Priyal Sengar  -->
+                <div class="member">
+                    <img src="Images/pic-1.png" alt="">
+                    <h2>Priyal Sengar</h2>
+                    <p>Front Developer</p>
+                </div>
+        </div>
+    </section>
+
+
+    <form action="/" method="POST">
+    <section id="contact_us">
+        <div class="contact">
+            <h2>Get In Touch</h2>
+            <div class="form">
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter Your Name" name="Name" value="">
+            </div>
+
+            <div class="form">
+                <label>Mobile:</label>
+                <input type="tel" placeholder="Enter Your Phone No." name="" value="">
+            </div>
+
+            <div class="form">
+                <label>Email:</label>
+                <input type="email" placeholder="Enter Your Email Id" name="" value="">
+            </div>
+
+            <div class="form">
+                <label>Feedback</label>
+                <input type="text" placeholder="Enter Your Feedback" name="Feedback" value="">
+            </div>
+
+            <div class="button">
+                <button class="bttn" name="Submit_B" type="submit" value="message">Submit</button>
+            </div>
+
+            
+        </div>
+        
+        
+    </section>
+</form>
+
+
+</body>
+
+</html>
