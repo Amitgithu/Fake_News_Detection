@@ -7,6 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fake News Detection</title>
     <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- font-family: 'PT Sans', sans-serif; -->
 </head>
@@ -29,7 +48,7 @@
     </nav>
 
     <section id="home">
-        <h1 class="h-primary" data-text="welcome to our Fake News Detection website" >Welcome to Our <br> Fake  News Detection <br> Website</h1>
+        <h1 class="h-primary" >Welcome to <br> Advanced Fake  News <br> Detection System</h1>
 
     </section>
 
@@ -92,23 +111,20 @@
         </div>
         <div id=detectbox>
                 <h1 class="detection_page">Detection</h1>
-                <form action="" method="POST">
+                <form action="/" method="POST">
                 <div class="detection-box ">
-                    <div class="textbox">
-                   
-                    <input type="url" placeholder="Enter url" name="NewsUrl" value="">
+
+                    <label class="detect">News:</label>
+                    <textarea id='textarea' rows='5' cols='50' value='newsContent' placeholder="Enter the news"></textarea> 
+
+                    <label class="detect">Email:</label>
+                    <input type="email" placeholder="Enter sender email" name="Email"  value="">
+
+                    <input type=submit class="check" name="Submit_B" value="Check">
+
                     
                 </div>
-                <button class="btn" name="Submit_B" type="submit" value="URLnews">Submit</button>
-                <h2>OR</h2>
-            </div>
-            <div class="detection-box">
-                <div class="textbox">
-                    
-                    <input type="text" placeholder="Enter Content" name="content" value="">
-                    
-                </div>
-                <button class="btn" name="Submit_B" type="submit" value="newsContent">Submit</button>
+            
             </div>
         </form>
         </div>
@@ -121,9 +137,48 @@
         </div>
 
     </section>
+    <!-- <div class="disc">
+         
+         
+       <b> Source of datasets used in the above detection models:</b> <br>
+       www.kaggle.com
+        <br>
+       <b> *Disclaimer: </b> The datasets used to train the model has been extracted in April, 2021.The accuracy of the above model is <b> 94.5%<br>Therefore it does not impose its 
+        result to completely accurate or declare any website or news source to be fraud.
+    </div> -->
+       
+        <!-- <section id="stats">
+            <h1>Statistics</h1>
+            <div class="statistics">
+             
+                 <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on television versus print media worldwide in 2019 (2).jpg')}}" alt="" class="zoom" ></div>
+                 <div id="graphtwo" ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in different countries 2020 (6).jpg')}}" alt="" class="zoom"></div>
+                 
+
+                
+                    <div ><img src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in 2020 (1).jpg')}}" alt="" class="zoom"></div>
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in different countries 2020 (5).jpg')}}" alt="" class="zoom"></div>
+               
+                
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Main source of information about news and current affairs in selected countries worldwide as of June 2020.jpg')}}" alt="" class="zoom"></div>
+                    <div ><img   src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on print media countruwise in 2019.png')}}" alt="" class="zoom"></div>
+                    
+               
+                    <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Level of difficulty differentiating between true and false information online among consumers in 2020.jpg')}}" alt="" class="zoom"></div>
+                    <div ><img  src="{{url_for('static', filename='Assets/StatsGraphs/Share of adults who have witnessed fake news on television countruwise in 2019.jpg')}}" alt="" class="zoom"></div>
+                    <br><br>
+                    <br>
+                    <br>
+                    <div class="disc"><b> Source:</b> Statista.com <br>
+
+                        <b> *Disclaimer:</b> The information of these graphs have been extracted through online surveys performed by various organizations. <br> Therefore it does not impose its results to be completely accurate or impose it on 
+                        other countries or in any way indicate future results.</div>
+             
+            </div>
+        </section> -->
     
         <section id="about_us">
-            <h1 class="About">About Us</h1>
+            <h1 class="about_intro">About Us</h1>
             <div class="about">
                 <!-- Aaditya Saraswat  -->
                 <div class="member">
@@ -201,14 +256,46 @@
                 <button class="bttn" name="Submit_B" type="submit" value="message">Submit</button>
             </div>
 
-            
+            <!-- {% if send=="success" %}
+                <div class="mail">Response recorded. Thanks for feedback. </div>
+            {% elif send=="not success" %}
+                <div class="mail">Feedback can't be empty.Enter some feedback </div>
+            {% endif %} -->
         </div>
         
         
     </section>
 </form>
-
+<!-- 
+{% if scroll %}
+<script>
+    document.getElementById('{{ scroll }}').scrollIntoView();
+</script>
+{% endif %} -->
 
 </body>
+
+<!-- <script type="text/javascript" src="{{url_for('static', filename='JavaScript/detect.js')}}"></script>
+<script type="text/javascript">
+    {% if (prediction)== [1] %}
+        showreal();
+    {% elif (prediction)== [0] %}
+        showfake();
+    {% endif %}
+ </script> -->
+
+ <script>
+    ScrollReveal({ 
+        reset: true ,
+        distance:'30px',
+        duration:2800,
+        delay:200
+        });
+
+        ScrollReveal().reveal('.h-primary', { delay: 600 , origin:'left'});
+
+ </script>
+
+
 
 </html>

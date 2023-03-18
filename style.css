@@ -90,9 +90,11 @@ border-radius:20px;
     background-size:cover;
     flex-direction: column;
     padding:150px 200px;
-    justify-content: center;
+    justify-content: left;
+    margin-left :0;
     align-items: center;
     height:445px;
+    
 
 }
 #home::before{
@@ -105,13 +107,35 @@ border-radius:20px;
     width:100%;
     z-index:-1;
     opacity:0.89;
+    /* animation-name: slider;
+    animation-duration: 24s;
+    animation-iteration-count: infinite; */
+    
+    
 
 }
+/* @keyframes slider{
+    0%{
+        background: url('Home.jpeg') no-repeat center center/cover;
+    }
+    25%{
+        background: url('dark background.jpg')no-repeat center center/cover;
+    }
+    50%{
+        background: url('Intro.jpeg')no-repeat center center/cover;
+    }
+    75%{
+        background: url('slide4.webp')no-repeat center center/cover;
+    }
+    100%{
+        background: url('Intro.jpeg')no-repeat center center/cover;
+    }
+} */
 #home h1{
-    font-family: 'Bree Serif', serif;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 70px;
     color:white;
     text-align: center;
-    font-size: 3.8rem;
 }
 
 .fakenews-container{
@@ -193,6 +217,10 @@ border-radius:20px;
 
 }
 
+.detect{
+    text-align: start;
+}
+
 
 .one{
     display:flex;
@@ -224,7 +252,7 @@ border-radius:20px;
 
 #detection{
    
-    background: url('Images/keyboard.jpg') no-repeat center center/cover;
+    background: url('Images/contactbg.png') no-repeat center center/cover;
     font-family: sans-serif;
     height:750px;
     width:100%;
@@ -241,9 +269,22 @@ border-radius:20px;
     width:100%;
     display:flex;
     flex-direction: column;
-    align-items: center;
-    justify-items: center;
     
+}
+.check{
+    margin-top:10px;
+    width:100px;
+    height:40px;
+    font-size:20px;
+    color:white;
+    background-color:#27e027;
+    border:none;
+    border-radius:15px;
+    position:relative;
+    left:30%;
+}
+.check:hover{
+    background-color:#0db80d;
 }
 #detection::before{
     content:"";
@@ -268,12 +309,33 @@ border-radius:20px;
     text-align: center;
 }
 
+input[type='email']{
+    padding:6px;
+    border:none;
+    border-radius:8px;
+    width:310px;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+textarea::placeholder{
+    padding:5px;
+    font-size:16px;
+}
+.detect{
+    margin-top:5px;
+}
+input::placeholder{
+    font-size:15px;
+}
 .detection-box{
     display:flex;
     flex-direction: column;
-    width:70%;
-    align-items: center;
-    justify-content: center;
+    width:320px;
+    height:170px;
+    padding:10px;
+    position:relative;
+    left:140px;
 }
 .detection-box h2{
     font-family: 'Bree Serif', serif;
@@ -356,6 +418,56 @@ visibility:hidden;
 #fakepara{
 color:white;
 visibility:hidden;
+}
+#stats{
+    
+    background: url('../Assets/Images/keyboard.jpg') no-repeat center center/cover;
+    font-family: sans-serif;
+    height:280rem;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    margin-left: 0;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+#stats h1{
+    color:white;
+    font-size: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+.statistics{
+display: flex;
+flex-direction: column;
+margin-bottom: 5rem;
+}
+
+.statistics img{
+width:70vw;
+height: 30rem;
+/* transition:0.5s; */
+overflow: hidden;
+
+
+}
+#graphtwo img{
+    height:40rem;
+}
+.statistics img:hover{
+
+    z-index:1;
+    box-shadow:0 25px 40px rgba(0,0,0,0.5);
+    
+}
+.disc{
+    
+    color:white;
+    background-color: black;
 }
 /* Below code is to remove the rightside whitespace */
 html,body{
