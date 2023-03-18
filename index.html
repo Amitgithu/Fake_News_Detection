@@ -111,16 +111,16 @@
         </div>
         <div id=detectbox>
                 <h1 class="detection_page">Detection</h1>
-                <form action="/" method="POST">
+                <form action="/predict" method="POST">
                 <div class="detection-box ">
 
                     <label class="detect">News:</label>
-                    <textarea id='textarea' rows='5' cols='50' value='newsContent' placeholder="Enter the news"></textarea> 
+                    <textarea id='textarea' rows='5' cols='50' name ='news' value='newsContent' placeholder="Enter the news"></textarea> 
 
                     <label class="detect">Email:</label>
                     <input type="email" placeholder="Enter sender email" name="Email"  value="">
 
-                    <input type=submit class="check" name="Submit_B" value="Check">
+                    <button class="predict" name ="Submit">Predict</button>
 
                     
                 </div>
